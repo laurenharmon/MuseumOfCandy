@@ -37,6 +37,85 @@
         </div>
     </nav>
 
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div id="headingGroup" class="text-white text-center d-none d-md-block mt-5">
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                    <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+                </div>
+            </div>
+            <div class="col-md-6"><img src="images/hand2.png" alt="Hand Holding Donut" class="img-fluid"></div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/milk.png" alt="Milk with Donuts on Straws" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 order-md-2 description">
+                <div class="row justify-content-center ">
+                    <div class="col-10 col-md-8 text-center">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <img src="images/lolli_icon.png" alt="Lollipop icon" class="d-none d-lg-inline">
+                        <p class="lead mb-5 mb-md-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis sit delectus vero!
+                            Nisi ipsum a suscipit quis fuga error, voluptatem praesentium quaerat amet! Soluta assumenda
+                            minima ipsum quam doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2">
+                <img src="images/gumball.png" alt="Pink gumball machine with white gum" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 description">
+                <div class="row justify-content-center ">
+                    <div class="col-10 col-md-8 text-center">
+                        <h2>IMAGINE A DIFFERENT LABEL HERE</h2>
+                        <img src="images/lolli_icon.png" alt="Lollipop icon" class="d-none d-lg-inline">
+                        <p class="lead mb-5 mb-md-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis sit delectus vero!
+                            Nisi ipsum a suscipit quis fuga error, voluptatem praesentium quaerat amet! Soluta assumenda
+                            minima ipsum quam doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0 last">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="images/sprinkles.png" alt="Milk with Donuts on Straws" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-1 order-md-2 description">
+                <div class="row justify-content-center ">
+                    <div class="col-10 col-md-8 text-center">
+                        <h2>WOW ANOTHER LABEL</h2>
+                        <img src="images/lolli_icon.png" alt="Lollipop icon" class="d-none d-lg-inline">
+                        <p class="lead mb-5 mb-md-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis sit delectus vero!
+                            Nisi ipsum a suscipit quis fuga error, voluptatem praesentium quaerat amet! Soluta assumenda
+                            minima ipsum quam doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -54,6 +133,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <!-- js and jquery -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#topNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            })
+        })
+    </script>
 </body>
 
 </html>
